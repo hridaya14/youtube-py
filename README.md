@@ -130,7 +130,40 @@ print(video_details)
                 "publishedAt": "2009-10-25T06:57:33Z",
                 "channelId": "UCuAXFkgsw1L7xaCfnd5JJOw",
                 "title": "Rick Astley - Never Gonna Give You Up (Official Music Video)",
-        }
+                "description": "The official music video for Rick Astley's 'Never Gonna Give You Up'...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "RickAstleyVEVO",
+                "tags": ["Rick Astley", "Never Gonna Give You Up", "music"],
+                "categoryId": "10",
+                "liveBroadcastContent": "none",
+                "localized": {
+                    "title": "Rick Astley - Never Gonna Give You Up (Official Music Video)",
+                    "description": "The official music video for Rick Astley's 'Never Gonna Give You Up'..."
+                }
+            },
+            "statistics": {
+                "viewCount": "1000000000",
+                "likeCount": "10000000",
+                "dislikeCount": "1000",
+                "favoriteCount": "0",
+                "commentCount": "500000"
+            }
         }
     ]
 }
@@ -148,16 +181,60 @@ print(search_results)
 
 **Output Example**:
 ```json
-[
-    {
-        "title": "Learn Python Programming - Full Course for Beginners",
-        "videoId": "rfscVS0vtbw"
-    },
-    {
-        "title": "Python Tutorial for Beginners [Full Course]",
-        "videoId": "YYXdXT2l-Gg"
-    }
-]
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "9fRhN9nXalRjdZ8g8T8eOihPIgQ",
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "yFUPmGzD8EAdTg9M7kTXWAmTWuY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "rfscVS0vtbw"
+            },
+            "snippet": {
+                "publishedAt": "2021-01-01T00:00:00Z",
+                "channelId": "UC8butISFwT-Wl7EV0hUK0BQ",
+                "title": "Learn Python Programming - Full Course for Beginners",
+                "description": "This is a full Python course for beginners...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/rfscVS0vtbw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    }
+                },
+                "channelTitle": "Programming with Mosh",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-01-01T00:00:00Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZrTrNmzR3AWPH4rx9rAYTtSTZmU",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "YYXdXT2l-Gg"
+            },
+            "snippet": {
+                "publishedAt": "2021-02-01T00:00:00Z",
+                "channelId": "UCsD4u8w0w6o-h0KlWmZf2gA",
+                "title": "Python Tutorial for Beginners [Full Course]",
+                "description": "A comprehensive tutorial on Python for beginners...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/YYXdXT2l-Gg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    }
+                },
+                "channelTitle": "Tech with Tim",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-02-01T00:00:00Z"
+            }
+        }
+    ]
+}
 ```
 
 #### c. **List Channel Videos**
@@ -172,16 +249,64 @@ print(channel_videos)
 
 **Output Example**:
 ```json
-[
-    {
-        "title": "Python Tutorial",
-        "videoId": "exampleVideoId1"
-    },
-    {
-        "title": "Advanced Python Techniques",
-        "videoId": "exampleVideoId2"
-    }
-]
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "R13F_8A_FmO_y1QKxPZUkHgkNHc",
+    "items": [
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "DgpT4Y1J2ksc8WcFsU1NkpEXtPE",
+            "id": "UExkN0o0YmY5NjRmb3dBSzQ0Qk1oVFBkZ1EwQjQ0Q0FqUjlET3U0Q3JjZzU0",
+            "snippet": {
+                "publishedAt": "2024-07-15T12:34:56
+
+Z",
+                "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+                "title": "Python Tutorial",
+                "description": "A new Python tutorial video...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/exampleVideoId1/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    }
+                },
+                "channelTitle": "Your Channel Name",
+                "playlistId": "PLkIo9xzG6bYpNYY_N2f8P0i7_pzdk02nC",
+                "position": 0,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "exampleVideoId1"
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "F9zzJ-QTyXUMRtE6NFrkIGnxX5M",
+            "id": "UExkN0o0YmY5NjRmb3dBSzQ0Qk1oVFBkZ1EwQjQ0Q0FqUjlET3U0Q3JjZzU1",
+            "snippet": {
+                "publishedAt": "2024-07-14T12:34:56Z",
+                "channelId": "UCW5YeuERMmlnqo4oq8vwUpg",
+                "title": "Advanced Python Techniques",
+                "description": "An advanced Python tutorial video...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/exampleVideoId2/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    }
+                },
+                "channelTitle": "Your Channel Name",
+                "playlistId": "PLkIo9xzG6bYpNYY_N2f8P0i7_pzdk02nC",
+                "position": 1,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "exampleVideoId2"
+                }
+            }
+        }
+    ]
+}
 ```
 
 ### 3. **YouTube Transcript API**
@@ -203,7 +328,7 @@ print(transcript)
 [
     {"text": "We're no strangers to love", "start": 0.0, "duration": 4.0},
     {"text": "You know the rules and so do I", "start": 4.0, "duration": 4.2},
-    ...
+    {"text": "A full commitment's what I'm thinking of", "start": 8.2, "duration": 4.0}
 ]
 ```
 
@@ -228,7 +353,9 @@ This function returns a dictionary containing both the video details and its tra
         "title": "Never Gonna Give You Up",
         "description": "Official Rick Astley YouTube Channel",
         "viewCount": "1000000000",
-        "likeCount": "10000000"
+        "likeCount": "10000000",
+        "dislikeCount": "1000",
+        "commentCount": "500000"
     },
     "transcript": [
         {"text": "We're no strangers to love", "start": 0.0, "duration": 4.0},
