@@ -11,10 +11,7 @@ setuptools.setup(
     description="This is a package that wraps around the YouTube API, providing an easier user interface and experience",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="package URL",
-    project_urls={
-        "Bug Tracker": "package issues URL",
-    },
+    url="https://github.com/hridaya14/youtube-py",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
