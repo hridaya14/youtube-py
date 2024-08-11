@@ -1,5 +1,3 @@
-Here’s a more detailed Markdown file for your documentation, including installation instructions for both Windows and Linux/Mac:
-
 ---
 
 # `youtube_wrapper_py` Documentation
@@ -276,5 +274,3 @@ This package is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 If you wish to contribute to this project, please fork the repository and submit a pull request. Make sure to update tests as appropriate.
 
 ---
-
-Save this as `README.md` in the root directory of your project. This will provide detailed guidance for users on how to install and use your package.
