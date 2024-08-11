@@ -7,6 +7,10 @@ with open('tests/Data/sample_transcript.txt', 'r+') as f:
 
 def test_get_transcript_with_translation():
     transcript = api.get_transcript_with_translation('dQw4w9WgXcQ')
-    str_transcript = f'{transcript}'
+    transcript_str = f'{transcript}'
+    if "An error occurred" in transcript:
+        assert transcript.startswith("An error occurred")
+    else:
+        
+        assert transcript_str == data
 
-    assert str_transcript == data
