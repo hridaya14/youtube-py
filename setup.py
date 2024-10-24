@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="youtube_wrapper_py",
-    version="0.0.2",
+    version="0.0.3",
     author="Hridaya Sharma",
     author_email="hridaya.02819011622@ipu.ac.in",
     description="This is a package that wraps around the YouTube API, providing an easier user interface and experience",
